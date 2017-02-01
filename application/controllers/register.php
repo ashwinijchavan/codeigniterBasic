@@ -21,7 +21,7 @@ class Register extends CI_Controller {
       $data['address']= $this->input->get("address");
 
       $this->Register_model->save_register($data);
-      redirect(base_url('register/registerTable'), 'refresh'); 
+      redirect(base_url('register/registerList'), 'refresh'); 
    }
    public function registerList()
   {
