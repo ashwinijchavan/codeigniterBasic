@@ -7,7 +7,11 @@ class Student extends CI_Controller {
 			#$this->load->helper('url');
 		$this->load->model('Profile_model');
 	}
-
+	public function getStudent()
+	{
+		 
+		$this->load->view('studentForm', null);
+	}
 
 	public function studentList()
 	{
@@ -26,14 +30,14 @@ class Student extends CI_Controller {
 		$data['gender']= $this->input->get('genderName');
 		$data['qualification']= $this->input->get('qualificationName');
 		$data['proffession']= $this->input->get('selectOptionName');
-		$data['status']= $this->input->get('singleName');
+		$data['status']= $this->input->get('status');
 		$data['phone_number']= $this->input->get('mobile');
 		$res = $this->Profile_model->save_info($data);
 		if($res==true){
 			echo  $data['msg']="REcord Added sucessfully";
 		}
 
-		redirect('null','refresh');
+		      redirect(base_url('student/studentList'), 'refresh'); 
 
 	}
 

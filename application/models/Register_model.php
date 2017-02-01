@@ -9,7 +9,7 @@ class Register_model  extends CI_Model {
 	function save_register($data){
 		
 		$this->db->insert('registration_detail',$data);
-		 $this->db->last_query();
+		$this->db->last_query();
 	}
 	public function get_info()
 	{
