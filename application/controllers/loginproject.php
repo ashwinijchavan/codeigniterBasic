@@ -18,7 +18,7 @@ class Loginproject extends CI_Controller {
 			echo "success";
 		}
 		else{
-			$this->load->view('adminlogin');
+			echo "fail";
 		}
 		 
 	}
