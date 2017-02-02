@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>project</title>
-	<?php 	echo link_tag('assets/bootstrap.min.css') ;
-	
+<?php echo include('header.php'); ?>
 
-	?>
-	<link href="<?php echo base_url('assets/style.css');	 ?>" rel="stylesheet" type="text/css" />
+<?php echo include('footer.php'); ?>
 
-</head>
-<body>
-  <h1>Hello</h1>
-</body>
-</html>
