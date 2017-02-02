@@ -75,6 +75,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  	<a href="<?php echo base_url('login/getLogin') ?>" title="">Login</a><br>
  	<a href="<?php echo base_url('friend/showFriend') ?>" title="">Add Friend</a>&nbsp;&nbsp;&nbsp;
  	<a href="<?php echo base_url('friend/friendList') ?>" title="">Show Friend List</a>
+ 	<a href="<?php echo base_url('enquiry/enquiryList') ?>" title="">Enquiry Form</a>
 
 	
 </div>
